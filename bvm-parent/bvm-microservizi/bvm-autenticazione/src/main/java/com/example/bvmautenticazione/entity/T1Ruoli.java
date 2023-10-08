@@ -9,7 +9,7 @@ import java.util.Objects;
 @Entity
 @Table(name = "t_1_ruoli", schema = "bvmanager", catalog = "")
 public class T1Ruoli extends BaseEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Id
     @Column(name = "ID_RUOLO")
     private String idRuolo;

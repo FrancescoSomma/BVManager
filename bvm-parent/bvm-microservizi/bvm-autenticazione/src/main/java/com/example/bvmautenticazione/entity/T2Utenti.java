@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "t_2_utenti", schema = "bvmanager", catalog = "")
 public class T2Utenti  extends BaseEntity {
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @Id
     @Column(name = "ID_UTE")
     private Integer idUte;
