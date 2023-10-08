@@ -1,7 +1,7 @@
 package com.example.bvmautenticazione.entity;
 
 import entity.BaseEntity;
-import jakarta.persistence.*;
+import javax.persistence.*;
 
 
 @Entity

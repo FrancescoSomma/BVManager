@@ -1,10 +1,7 @@
 package com.example.bvmautenticazione.entity;
 
 import entity.BaseEntity;
-import jakarta.persistence.*;
-
-import java.sql.Date;
-import java.util.Objects;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "t_1_ruoli", schema = "bvmanager", catalog = "")
