@@ -3,7 +3,6 @@ package com.example.bvmautenticazione.entity;
 import entity.BaseEntity;
 import jakarta.persistence.*;
 
-import java.math.BigDecimal;
 
 @Entity
 @Table(name = "t_2_utenti", schema = "bvmanager", catalog = "")
@@ -15,9 +14,7 @@ public class T2Utenti  extends BaseEntity {
     @ManyToOne
     @JoinColumn(name = "ID_RUOLO")
     private T1Ruoli idRuolo;
-    @Basic
-    @Column(name = "RATING")
-    private BigDecimal rating;
+
     @Basic
     @Column(name = "EMAIL_UTE")
     private String emailUte;
@@ -44,13 +41,6 @@ public class T2Utenti  extends BaseEntity {
         this.idRuolo = idRuolo;
     }
 
-    public BigDecimal getRating() {
-        return rating;
-    }
-
-    public void setRating(BigDecimal rating) {
-        this.rating = rating;
-    }
 
     public String getEmailUte() {
         return emailUte;
